@@ -12,6 +12,10 @@ import LikeSad from "./components/LikeSad.vue";
           creator, etc. Make it short and sweet, but not too short so folks don’t simply
           skip over it entirely.
         </h4>
+        <div class="containbutton">
+          <button class="button3">Main call to action</button>
+          <button class="button4">Secondary Action</button>
+        </div>
       </div>
     </section>
     <div class="album py-5 bg-light">
@@ -138,6 +142,13 @@ h4 {
   color: limegreen;
   text-align: center;
 }
+.containbutton {
+  display: grid;
+  justify-content: center;
+  padding-top: 20px;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
 .container {
   display: grid;
   justify-content: center;
@@ -148,5 +159,29 @@ h4 {
 .card {
   width: 18rem;
   scroll-behavior: smooth;
+}
+.button3 {
+  background-color: rgb(0, 128, 255);
+  color: white;
+  transition-duration: 0.3s;
+}
+.button3:hover {
+  box-shadow: 0 0 3px 2px darkgray;
+  background-color: rgb(0, 96, 255);
+}
+.button3:active {
+  box-shadow: 0 0 4px 2px gray;
+}
+.button4 {
+  background-color: darkgray;
+  color: white;
+  transition-duration: 0.3s;
+}
+.button4:hover {
+  box-shadow: 0 0 3px 2px darkgray;
+  background-color: gray;
+}
+.button4:active {
+  box-shadow: 0 0 4px 2px gray;
 }
 </style>
